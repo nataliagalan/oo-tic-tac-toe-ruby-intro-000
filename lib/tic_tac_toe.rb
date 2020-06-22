@@ -52,31 +52,14 @@ WIN_COMBINATIONS = [
      puts "Please enter 1-9:"
      input = gets.strip
      index = input_to_index(input)
-
-     if !valid_move?(board, index)
-       turn(board)
-     else
-       move(board, index, current_player(board))
-     end
-     display_board(board)
-
+     
      if valid_move?(board, index)
-       move(board, index)
-       display_board(board)
+       move(index)
+       display_board
      else
-       turn(board)
+       turn
      end
    end
 
-##
-ask for input
-get input
-translate input into index
-if index is valid
-  make the move for index
-  show the board
-else
-  ask for input again
-end
-##
+
 end
