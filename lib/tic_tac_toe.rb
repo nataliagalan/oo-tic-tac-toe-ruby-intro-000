@@ -67,9 +67,25 @@ WIN_COMBINATIONS = [
        position_taken?(win_combination[0])
      end
    end
-###
 
-###
+   def full?
+     turn_count == 9
+   end
+
+   def draw?
+     !won? && full?
+   end
+
+   def over?
+     won? || full? || draw?
+   end
+
+   def winner
+     won = ""
+     if winner = won?
+       won = @board[winner.first]
+     end
+   end
 
 
 
