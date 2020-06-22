@@ -60,12 +60,17 @@ WIN_COMBINATIONS = [
      display_board
    end
 
+   def won?
+     WIN_COMBINATIONS.detect do |win_combination|
+       @board[win_combination[0]] == @board[win_combination[1]] &&
+       @board[win_combination[1]] == @board[win_combination[2]] &&
+       position_taken?(win_combination[0])
+     end
+   end
 ###
-#    receives user input via the gets method (FAILED - 1)
-    #  calls #input_to_index, #valid_move?, and #current_player (FAILED - 2)
-    #  makes valid moves and displays the board (FAILED - 3)
-  #    asks for input again after a failed validation (FAILED - 4)
 
-      ###
+###
+
+
 
 end
