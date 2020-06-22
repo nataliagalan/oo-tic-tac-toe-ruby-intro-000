@@ -36,8 +36,8 @@ WIN_COMBINATIONS = [
   end
 
   def valid_move?(index)
-    return true if @board[index].between?(0,8) && !position_taken?(index)
-    return false if !@board[index].between?(0,8) && position_taken?(index)
+    return true if user_input.between?(0,8) && !position_taken?(index)
+    return false if !user_input.between?(0,8) && position_taken?(index)
   end
 
   def turn_count
