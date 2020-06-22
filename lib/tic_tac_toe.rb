@@ -21,9 +21,6 @@ WIN_COMBINATIONS = [
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-  
-  #Define a method into which we can pass user input (in the form of a string, e.g., "1", "5", etc.)
-  #and have it return to us the corresponding index of the @board array.
 
   def input_to_index(user_input)
     user_input.to_i - 1
