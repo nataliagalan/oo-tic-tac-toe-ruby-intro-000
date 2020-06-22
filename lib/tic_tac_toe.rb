@@ -31,8 +31,8 @@ WIN_COMBINATIONS = [
   end
 
   def position_taken?(index)
-  if @board[index] != " " && @board[index] != ""
-    return true
+  if @board[index] = " " && @board[index] = ""
+    return false
   end
   end
 
