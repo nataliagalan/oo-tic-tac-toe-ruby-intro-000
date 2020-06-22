@@ -30,4 +30,12 @@ WIN_COMBINATIONS = [
     @board[index] = current_player
   end
 
+  def position_taken?(board, location)
+    @board[location] != " " && @board[location] != ""
+  end
+
 end
+
+#will check to see if that position on the @board is vacant or 
+#if it contains an "X" or an "O". If the position is free, the method should return false 
+#(i.e., "the position is not taken"); otherwise, it will return true.
