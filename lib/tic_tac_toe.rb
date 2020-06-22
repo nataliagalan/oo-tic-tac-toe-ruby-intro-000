@@ -50,8 +50,8 @@ WIN_COMBINATIONS = [
 
    def turn
      puts "Please enter 1-9:"
-       userInput = gets.strip # gets the user input and calls input_to_index
-       index = input_to_index(userInput)
+       user_input = gets.strip # gets the user input and calls input_to_index
+       index = input_to_index(user_input)
        if !valid_move?(@board, index) # asks for input again after a failed validation
          turn(@board)
        else # makes valid moves
