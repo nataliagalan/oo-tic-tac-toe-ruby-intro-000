@@ -39,7 +39,7 @@ WIN_COMBINATIONS = [
     return true if index.between?(0,8) && !position_taken?(index)
     return false if !index.between?(0,8) && position_taken?(index)
   end
-  
+
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
