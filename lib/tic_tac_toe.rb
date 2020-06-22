@@ -36,6 +36,6 @@ WIN_COMBINATIONS = [
 
 end
 
-#will check to see if that position on the @board is vacant or 
-#if it contains an "X" or an "O". If the position is free, the method should return false 
+#will check to see if that position on the @board is vacant or
+#if it contains an "X" or an "O". If the position is free, the method should return false
 #(i.e., "the position is not taken"); otherwise, it will return true.
