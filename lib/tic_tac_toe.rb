@@ -86,7 +86,7 @@ WIN_COMBINATIONS = [
        won = @board[winner.first]
      end
    end
-   
+
    def play
      until over?
        turn
