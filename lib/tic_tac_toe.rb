@@ -30,7 +30,7 @@ WIN_COMBINATIONS = [
     @board[index] = current_player
   end
 
-  def position_taken?(board,index)
+  def position_taken?(index)
     return false if [" ", "", nil].include?(@board[index])
     return true if ["X", "O"].include?(@board[index])
   end
