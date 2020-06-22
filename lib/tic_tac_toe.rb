@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
     return false if [" ", "", nil].include?(@board[index])
     return true if ["X", "O"].include?(@board[index])
   end
-  
+
   def valid_move?(index)
     return true if index.between?(0,8) && !position_taken?(index)==false
   end
