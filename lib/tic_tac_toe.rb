@@ -27,3 +27,6 @@ WIN_COMBINATIONS = [
   end
 
 end
+
+#Define a method into which we can pass user input (in the form of a string, e.g., "1", "5", etc.) 
+#and have it return to us the corresponding index of the @board array. 
