@@ -86,7 +86,20 @@ WIN_COMBINATIONS = [
        won = @board[winner.first]
      end
    end
+   
+   def play
+     until over?
+       turn
+   end
 
+     if won?
+       winner = winner()
+       puts "Congratulations #{winner}!"
+     elsif draw?
+       puts "Cat's Game!"
+     end
+   end
+ end
 
 
 end
